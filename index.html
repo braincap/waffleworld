@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <title>Document</title>
+</head>
+
+<body class='container-fluid'>
+
+  <header class='header'>
+    <img class='logo' src="/img/logo.png" alt="Waffle World" />
+    <nav class='navbar'>
+      <div class='nav-item'><a href="#menu">Menu</a></div>
+      <div class='nav-item'><a href="#contact">Contact</a></div>
+    </nav>
+  </header>
+
+  <div class="slider large-slides">
+    <div><img class="large-image" src="img/large1.jpg" alt="Waffle Image 1" /></div>
+    <div><img class="large-image" src="img/large2.jpg" alt="Waffle Image 2" /></div>
+    <div><img class="large-image" src="img/large3.jpg" alt="Waffle Image 3" /></div>
+  </div>
+
+  <section class="about">
+    <div class="small-image"><img src="./img/small3.jpg" alt="Waffle" /></div>
+    <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi, porro quae
+      accusantium nulla voluptate
+      ea cupiditate qui et culpa laborum ab, optio sint suscipit omnis? Quo alias quaerat mollitia cupiditate. Alias
+      velit, et tempora officia hic voluptatibus itaque qui. Ad, vitae mollitia ducimus quos possimus beatae repellat
+      hic unde.</p>
+  </section>
+
+  <section class="menu" id="menu">
+    <h1>Menu</h1>
+    <ul class="waffles">
+      <li class="title">Waffles</li>
+      <li class="item">Classic with powdered sugar | 4</li>
+      <li class="item">Chocolate dipped | 5</li>
+      <li class="item">Nutella® | 5</li>
+      <li class="item">Speculoos | 5</li>
+      <li class="item">Strawberries & whipped cream | 7</li>
+      <li class="item">Berry compote & whipped cream | 7</li>
+      <li class="item">Bruleed bananas with salted caramel & whipped cream | 8</li>
+      <li class="item">Ice cream sundae with salted caramel, chocolate sauce, peanuts, cherries & whipped cream | 8</li>
+    </ul>
+    <ul class="shakes">
+      <li class="title">Shakes</li>
+      <li class="item">Vanilla Shake | 4</li>
+      <li class="item">Chocolate Shake | 7</li>
+      <li class="item">Strawberry Shake | 6</li>
+      <li class="item">Coffee Shake | 5</li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-text">
+      <h2>Waffle World</h2>
+      <h4>Vishal Nagar</h4>
+      <h4>Pune</h4>
+    </div>
+    <div class="small-image"><img src="./img/location.jpg" alt="Map" /></div>
+  </section>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        pauseOnFocus: false,
+        pauseOnHover: false
+      });
+    });
+  </script>
+
+</body>
+
+</html>
